@@ -4,6 +4,7 @@ function Hero() {
       <h1 className="text-6xl font-bold">
         Evgeniia Nemynova
       </h1>
+      <p>Fullstack Software Developer</p>
     </section>
   )
 }
