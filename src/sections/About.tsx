@@ -6,8 +6,6 @@ function About() {
             </h2>
             <p>
                 I am a software engineer focused on building full-stack applications and developer tools from zero to deployment. I enjoy solving real problems in creative ways and am always looking to acquire new skills.
-
-                Recently, I have been working on projects involving Typescript, React, and Next.js.
             </p>
         </section>
     )
