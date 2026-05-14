@@ -1,4 +1,4 @@
-function Hero() {
+function Contacts() {
   return (
     <section className="min-h-screen flex items-center justify-center">
       <p>
@@ -10,4 +10,4 @@ function Hero() {
   )
 }
 
-export default Hero
+export default Contacts
