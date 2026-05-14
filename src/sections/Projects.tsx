@@ -8,16 +8,16 @@ function Projects() {
 
       <div className="projects-grid">
         {projects.map((project) => (
-          <a
-            key={project.id}
+        //   <a
+            // key={project.id}
             // href={project.link}
-            className="project-card"
-          >
+            // className="project-card"
+        //   >
             <div className="project-content">
               <h3>{project.title}</h3>
               <p>{project.description}</p>
             </div>
-          </a>
+        //   </a>
         ))}
       </div>
     </section>
