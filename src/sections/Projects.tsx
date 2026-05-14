@@ -1,11 +1,27 @@
-function Hero() {
+import projects from "../data/projects";
+import "./Projects.css";
+
+function Projects() {
   return (
-    <section className="min-h-screen flex items-center justify-center">
-      <h2 className="text-4xl font-bold mb-6">
-        Projects
-      </h2>
+     <section className="projects-section">
+      <h2>Projects</h2>
+
+      <div className="projects-grid">
+        {projects.map((project) => (
+          <a
+            key={project.id}
+            // href={project.link}
+            className="project-card"
+          >
+            <div className="project-content">
+              <h3>{project.title}</h3>
+              <p>{project.description}</p>
+            </div>
+          </a>
+        ))}
+      </div>
     </section>
   )
 }
 
-export default Hero
+export default Projects
