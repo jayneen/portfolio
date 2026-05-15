@@ -1,7 +1,7 @@
 function About() {
     return (
-        <section className="min-h-screen p-20" style={{ textAlign: "left", padding: "20px" }}>
-            <h2 className="text-4xl font-bold mb-6">
+        <section>
+            <h2>
                 About
             </h2>
             <p>

@@ -1,6 +1,6 @@
 function Contacts() {
   return (
-    <section className="min-h-screen flex items-center justify-center">
+    <section>
       <p>
         Email: evgeniianemynova@gmail.com<br></br>
         LinkedIn: https://www.linkedin.com/in/evgeniia-nemynova/<br></br>
