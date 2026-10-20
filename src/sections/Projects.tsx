@@ -17,7 +17,19 @@ function Projects() {
         height: "100%",
       }}>
 
-        <div className="projects-grid">
+
+
+        <Box
+          sx={{
+            display: "grid",
+            gridTemplateColumns: {
+              xs: "1fr",              // 1 column
+              sm: "repeat(2, 1fr)",   // 2 columns
+              md: "repeat(3, 1fr)",   // 3 columns
+            },
+            gap: 3,
+          }}
+        >
           {projects.map((project) => (
             <Card
               key={project.id}
@@ -82,9 +94,9 @@ function Projects() {
               </Box>
             </Card>
           ))}
-        </div>
+        </Box>
       </Box>
-    </section>
+    </section >
   );
 }
 
