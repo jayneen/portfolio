@@ -1,8 +1,9 @@
 import Hero from './sections/Hero'
 import About from './sections/About'
 import Projects from './sections/Projects'
-import Contact from './sections/Contact'
+import Links from './sections/Links'
 import { createTheme, ThemeProvider } from "@mui/material/styles";
+import Experience from './sections/Experience';
 
 const theme = createTheme({
   palette: {
@@ -22,8 +23,9 @@ function App() {
       <main>
         <Hero />
         <About />
+        <Experience />
         <Projects />
-        <Contact />
+        <Links />
       </main>
     </ThemeProvider>
   )
