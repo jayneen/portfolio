@@ -10,8 +10,8 @@
 }
 
 .project-card {
-  background: #1e1e1e;
-  color: white;
+  background: var(--color-primary);
+  color: var(--color-surface);
 
   padding: 2rem;
 
