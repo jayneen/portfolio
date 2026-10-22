@@ -5,9 +5,10 @@ const experience = [
         company: "Self-employed",
         duration: "March 2026 - Present",
         description: [
-            "Developed software and web projects for organizations including the Seattle Universal Math Museum and Tacoma Russian SDA Church.",
-            "Conducted a website audit for the Morton McGoldrick law firm to identify usability, accessibility, security, and maintenance issues and provided recommendations for improvement.",
-            "Communicated directly with clients to understand requirements, discuss solutions, and deliver projects from concept through implementation."
+            "Collaborated directly with clients to gather requirements, assess technical approaches, and translate project goals into actionable implementation plans.",
+            "Developed and deployed the official Tacoma Russian SDA Church website, building responsive user interfaces and backend API routes with server-side token management and third-party integrations to deliver dynamic calendar events, livestream updates, and church resources.",
+            "Delivered a custom educational application for the Seattle Universal Math Museum, enabling visitors to explore mathematical concepts through hands-on fractal visualizations.",
+            "Consulted with Morton McGoldrick law firm on website improvements, evaluating usability, accessibility, security, and maintainability, providing actionable recommendations to guide decisions."
         ],
     }
 ]
