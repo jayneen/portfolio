@@ -4,11 +4,10 @@ import Typography from "@mui/material/Typography";
 
 function Experience() {
     return (
-        <>
+        <section>
             <h2>Experience</h2>
 
             <Box
-                component="section"
                 sx={{
                     textAlign: "left",
                 }}
@@ -44,7 +43,7 @@ function Experience() {
                 </div>
             </Box>
 
-        </>
+        </section>
     );
 }
 
