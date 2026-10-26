@@ -1,5 +1,6 @@
-import Link from "@mui/material/Link";
+
 import Box from "@mui/material/Box";
+import Link from "@mui/material/Link";
 
 function Contacts() {
   return (
@@ -7,8 +8,10 @@ function Contacts() {
       component="section"
       sx={{
         display: "flex",
-        gap: 2,
         justifyContent: "center",
+        alignItems: "center",
+        flexWrap: "wrap",
+        gap: 2,
         mb: 4,
       }}
     >
@@ -21,22 +24,18 @@ function Contacts() {
       </Link>
 
       <Link
-        href="https://www.github.com/jayneen"
+        href="https://github.com/jayneen"
         target="_blank"
         rel="noopener noreferrer"
       >
         GitHub
       </Link>
 
-      <Link
-        href="mailto:evgeniianemynova@gmail.com"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
+      <Link href="mailto:evgeniianemynova@gmail.com">
         Email
       </Link>
     </Box>
-  )
+  );
 }
 
-export default Contacts
+export default Contacts;

@@ -1,16 +1,21 @@
+
 import Box from "@mui/material/Box";
+import Typography from "@mui/material/Typography";
 
 function About() {
   return (
-    <section>
-      <h2>About</h2>
+    <Box component="section">
+      <Typography variant="h4" component="h2" gutterBottom>
+        About
+      </Typography>
 
-      <Box>
-        <p>
-          I am a software developer focused on building full-stack applications and developer tools from zero to deployment. I enjoy engaging with the community, solving real problems in creative ways, and am always looking to acquire new skills.
-        </p>
-      </Box>
-    </section>
+      <Typography variant="body1">
+        I am a software developer focused on building full-stack applications
+        and developer tools from zero to deployment. I enjoy engaging with the
+        community, solving real problems in creative ways, and am always
+        looking to acquire new skills.
+      </Typography>
+    </Box>
   );
 }
 

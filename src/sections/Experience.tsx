@@ -1,50 +1,53 @@
+
 import experience from "../data/experience";
+
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 
 function Experience() {
-    return (
-        <section>
-            <h2>Experience</h2>
+  return (
+    <Box component="section">
+      <Typography variant="h4" component="h2" gutterBottom>
+        Experience
+      </Typography>
 
-            <Box
-                sx={{
-                    textAlign: "left",
-                }}
-            >
+      <Box sx={{ textAlign: "left" }}>
+        {experience.map((exp) => (
+          <Box key={exp.id}>
+            <Typography variant="h6" component="h3" gutterBottom>
+              {exp.title}
+            </Typography>
 
-                <div>
-                    {experience.map((exp) => (
-                        <div key={exp.id}>
-                            <h3>{exp.title}</h3>
-                            <Box
-                                sx={{px: 4}}>
-                                <p>
-                                    <span className="meta-label">Company:</span>{" "}
-                                    {exp.company}
-                                </p>
+            <Box sx={{ px: { xs: 1, sm: 4 } }}>
+              <Typography variant="body1" sx={{ mb: 0.5 }}>
+                <Box component="span" sx={{ fontWeight: "bold", mr: 1 }}>
+                  Company:
+                </Box>
+                {exp.company}
+              </Typography>
 
-                                <p>
-                                    <span className="meta-label">Duration:</span>{" "}
-                                    {exp.duration}
-                                </p>
+              <Typography variant="body1" sx={{ mb: 1 }}>
+                <Box component="span" sx={{ fontWeight: "bold", mr: 1 }}>
+                  Duration:
+                </Box>
+                {exp.duration}
+              </Typography>
 
-                                {exp.description.map((paragraph, index) => (
-                                    <Typography
-                                        key={index}
-                                        variant="body1"
-                                    >
-                                        {paragraph}
-                                    </Typography>
-                                ))}
-                            </Box>
-                        </div>
-                    ))}
-                </div>
+              {exp.description.map((paragraph, index) => (
+                <Typography
+                  key={index}
+                  variant="body1"
+                  sx={{ mb: 1.5 }}
+                >
+                  {paragraph}
+                </Typography>
+              ))}
             </Box>
-
-        </section>
-    );
+          </Box>
+        ))}
+      </Box>
+    </Box>
+  );
 }
 
 export default Experience;

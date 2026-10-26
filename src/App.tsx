@@ -2,24 +2,14 @@ import Hero from './sections/Hero'
 import About from './sections/About'
 import Projects from './sections/Projects'
 import Links from './sections/Links'
-import { createTheme, ThemeProvider } from "@mui/material/styles";
+import { ThemeProvider, CssBaseline } from "@mui/material";
 import Experience from './sections/Experience';
-
-const theme = createTheme({
-  palette: {
-    mode: "dark",
-    primary: {
-      main: "#a29faa",
-    },
-    secondary: {
-      main: "#333333",
-    },
-  },
-});
+import { theme } from "./theme";
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
+      <CssBaseline />
       <main>
         <Hero />
         <About />

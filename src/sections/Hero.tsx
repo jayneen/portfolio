@@ -1,12 +1,21 @@
+import Box from "@mui/material/Box";
+import Typography from "@mui/material/Typography";
+
 function Hero() {
   return (
-    <>
-      <h1>
+    <Box
+      sx={{
+        padding: "2rem"
+    }}>
+      <Typography variant="h1" component="h1" gutterBottom>
         Evgeniia "Jayne" Nemynova
-      </h1>
-      <p>Fullstack Software Developer</p>
-    </>
-  )
+      </Typography>
+
+      <Typography variant="h5" component="p" color="text.secondary">
+        Fullstack Software Developer
+      </Typography>
+    </Box>
+  );
 }
 
-export default Hero
+export default Hero;
