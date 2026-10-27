@@ -9,7 +9,11 @@ function About() {
         About
       </Typography>
 
-      <Typography variant="body1">
+      <Typography variant="body1"
+        sx={{
+          maxWidth:"40rem",
+          margin:"auto auto"
+        }}>
         I am a software developer focused on building full-stack applications
         and developer tools from zero to deployment. I enjoy engaging with the
         community, solving real problems in creative ways, and am always
