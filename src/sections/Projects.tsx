@@ -1,4 +1,3 @@
-
 import projects from "../data/projects";
 
 import Box from "@mui/material/Box";
@@ -6,6 +5,7 @@ import Button from "@mui/material/Button";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
+import CardMedia from "@mui/material/CardMedia";
 
 function ProjectMeta({
   label,
@@ -17,7 +17,11 @@ function ProjectMeta({
   if (!items?.length) return null;
 
   return (
-    <Typography component="p" variant="body1" sx={{ mt: 0.5, textAlign: "left" }}>
+    <Typography
+      component="p"
+      variant="body1"
+      sx={{ textAlign: "left" }}
+    >
       <Box component="span" sx={{ fontWeight: "bold", mr: 1 }}>
         {label}:
       </Box>
@@ -29,7 +33,7 @@ function ProjectMeta({
 function Projects() {
   return (
     <Box component="section">
-      <Typography variant="h4" component="h3" gutterBottom>
+      <Typography variant="h4" component="h2" gutterBottom>
         Projects
       </Typography>
 
@@ -53,42 +57,67 @@ function Projects() {
             }}
           >
             <CardContent sx={{ flexGrow: 1 }}>
-              <Typography variant="h6" component="h3" gutterBottom>
+              <Typography variant="h6" component="h3" sx={{ fontWeight: "bold" }} gutterBottom>
                 {project.title}
               </Typography>
+
+              {project.image && (
+                <CardMedia
+                  component="img"
+                  image={project.image}
+                  alt={`${project.title} preview`}
+                  sx={{
+                    width: "100%",
+                    height: "200px",
+                    objectFit: "center",
+                    p: 1,
+                    boxSizing: "border-box",
+                  }}
+                />
+              )}
 
               <Typography variant="body1" sx={{ textAlign: "left" }}>
                 {project.description}
               </Typography>
-
-              <ProjectMeta label="Languages" items={project.languages} />
-              <ProjectMeta label="Frameworks" items={project.frameworks} />
             </CardContent>
 
-            <Box sx={{ display: "flex", justifyContent: "center", gap: 1, p: 2, pt: 0 }}>
-              {project.link?.[0] && (
-                <Button
-                  component="a"
-                  href={project.link[0]}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  variant="outlined"
-                >
-                  View
-                </Button>
-              )}
+            <Box sx={{ px: 2, pb: 2, mt: "auto" }}>
+              <Box sx={{ mb: 2 }}>
+                <ProjectMeta label="Languages" items={project.languages} />
+                <ProjectMeta label="Frameworks" items={project.frameworks} />
+              </Box>
 
-              {project.github?.[0] && (
-                <Button
-                  component="a"
-                  href={project.github[0]}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  variant="outlined"
-                >
-                  GitHub
-                </Button>
-              )}
+              <Box
+                sx={{
+                  display: "flex",
+                  justifyContent: "center",
+                  gap: 1,
+                }}
+              >
+                {project.link?.[0] && (
+                  <Button
+                    component="a"
+                    href={project.link[0]}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    variant="outlined"
+                  >
+                    View
+                  </Button>
+                )}
+
+                {project.github?.[0] && (
+                  <Button
+                    component="a"
+                    href={project.github[0]}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    variant="outlined"
+                  >
+                    GitHub
+                  </Button>
+                )}
+              </Box>
             </Box>
           </Card>
         ))}
