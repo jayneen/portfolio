@@ -107,7 +107,7 @@ export const theme = createTheme({
                 },
 
                 section: {
-                    margin: "2rem 2rem",
+                    margin: "2rem 2rem 0rem 2rem",
                     padding: "1rem 1rem",
                     backgroundColor: theme.palette.section,
                     "@media (max-width: 1024px)": {

@@ -1,24 +1,21 @@
-import Hero from './sections/Hero'
-import About from './sections/About'
-import Projects from './sections/Projects'
-import Links from './sections/Links'
-import { ThemeProvider, CssBaseline } from "@mui/material";
-import Experience from './sections/Experience';
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import ProjectDetails from "./pages/ProjectDetails";
+
 import { theme } from "./theme";
+import { ThemeProvider, CssBaseline } from "@mui/material";
 
 function App() {
   return (
+
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <main>
-        <Hero />
-        <About />
-        <Experience />
-        <Projects />
-        <Links />
-      </main>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/projects/:slug" element={<ProjectDetails />} />
+      </Routes>
     </ThemeProvider>
-  )
+  );
 }
 
-export default App
+export default App;

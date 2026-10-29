@@ -7,6 +7,8 @@ import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import CardMedia from "@mui/material/CardMedia";
 
+import { Link as RouterLink } from "react-router-dom";
+
 function ProjectMeta({
   label,
   items,
@@ -87,13 +89,22 @@ function Projects() {
                 <ProjectMeta label="Frameworks" items={project.frameworks} />
               </Box>
 
-              <Box
+              <Button
+                component={RouterLink}
+                to={`/projects/${project.slug}`}
+                variant="outlined"
+              >
+                View Project
+              </Button>
+
+              {/* <Box
                 sx={{
                   display: "flex",
                   justifyContent: "center",
                   gap: 1,
                 }}
               >
+
                 {project.link?.[0] && (
                   <Button
                     component="a"
@@ -117,7 +128,7 @@ function Projects() {
                     GitHub
                   </Button>
                 )}
-              </Box>
+              </Box> */}
             </Box>
           </Card>
         ))}
