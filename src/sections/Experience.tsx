@@ -37,13 +37,18 @@ function Experience() {
                                 {exp.duration}
                             </Typography>
 
-                            <List sx={{ listStyleType: "disc", pl: 2, py: 0 }}>
+                            <List sx={{
+                                listStyleType: "disc",
+                                pl: 2,
+                                py: 0
+                            }}>
                                 {exp.description.map((paragraph, index) => (
                                     <ListItem
                                         key={index}
                                         sx={{
                                             display: "list-item",
                                             py: 0.5,
+                                            px: { xs: 1, sm: 2 }
                                         }}
                                     >
                                         <Typography variant="body1">

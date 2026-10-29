@@ -12,8 +12,7 @@ function Contacts() {
         alignItems: "center",
         flexWrap: "wrap",
         gap: 2,
-        pb: 3,
-        mb: 0
+        pb: 3
       }}
     >
       <Link
