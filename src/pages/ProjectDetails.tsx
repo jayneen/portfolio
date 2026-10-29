@@ -45,7 +45,7 @@ function ProjectDetails() {
                     project.image && (
                         <CardMedia
                             component="img"
-                            image={"../../public/" + project.image}
+                            image={"../../" + project.image}
                             alt={`${project.title} preview`}
                             sx={{
                                 width: "100%",
