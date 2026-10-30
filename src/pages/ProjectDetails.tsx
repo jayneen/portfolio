@@ -91,7 +91,7 @@ function ProjectDetails() {
                             rel="noopener noreferrer"
                             variant="contained"
                         >
-                            Live Demo
+                            View Live
                         </Button>
                     )}
 

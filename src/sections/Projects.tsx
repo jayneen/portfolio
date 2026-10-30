@@ -96,39 +96,6 @@ function Projects() {
               >
                 View Project
               </Button>
-
-              {/* <Box
-                sx={{
-                  display: "flex",
-                  justifyContent: "center",
-                  gap: 1,
-                }}
-              >
-
-                {project.link?.[0] && (
-                  <Button
-                    component="a"
-                    href={project.link[0]}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    variant="outlined"
-                  >
-                    View
-                  </Button>
-                )}
-
-                {project.github?.[0] && (
-                  <Button
-                    component="a"
-                    href={project.github[0]}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    variant="outlined"
-                  >
-                    GitHub
-                  </Button>
-                )}
-              </Box> */}
             </Box>
           </Card>
         ))}
