@@ -92,6 +92,15 @@ function Projects() {
               <Button
                 component={RouterLink}
                 to={`/projects/${project.slug}`}
+                // save request origin
+                state={{ from: "/" }}
+                // savge the current scroll position
+                onClick={() => {
+                  sessionStorage.setItem(
+                    "portfolioScrollPosition",
+                    String(window.scrollY)
+                  );
+                }}
                 variant="outlined"
               >
                 View Project

@@ -1,8 +1,8 @@
-import Hero from '../sections/Hero'
-import About from '../sections/About'
-import Projects from '../sections/Projects'
-import Links from '../sections/Links'
-import Experience from '../sections/Experience';
+import Hero from '../components/Hero'
+import About from '../components/About'
+import Projects from '../components/Projects'
+import Links from '../components/Links'
+import Experience from '../components/Experience';
 
 function App() {
     return (
