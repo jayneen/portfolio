@@ -2,7 +2,7 @@
 
 A personal portfolio showcasing my software engineering projects, technical skills, and professional experience.
 
-**[View Live Portfolio](https://portfolio-5ywswh4j6-jayneens-projects.vercel.app/)**
+**[View Live Portfolio](https://portfolio-jayneens-projects.vercel.app/)**
 
 ## Screenshots
 
