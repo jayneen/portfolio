@@ -1,8 +1,9 @@
-const experience = [
+import type { Experience } from "../types/Experience";
+
+const experience: Experience[] = [
     {
         id: 1,
         title: "Freelance Software Developer",
-        company: "",
         duration: "March 2026 - Present",
         description: [
             "Collaborated directly with clients to gather requirements, assess technical approaches, and translate project goals into actionable implementation plans.",
