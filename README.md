@@ -7,13 +7,13 @@ A personal portfolio showcasing my software engineering projects, technical skil
 ## Screenshots
 
 ### Homepage
-<img src="screenshots/homepage.png" alt="Portfolio homepage" width="700">
+<img src="screenshots/homepage.png" alt="Portfolio landing page" width="700">
 
-### Bible Lessons
-<img src="screenshots/project-overview.png" alt="Project overview" width="700">
+### Project Overview
+<img src="screenshots/project-overview.png" alt="Project grid" width="700">
 
-### Church Calendar
-<img src="screenshots/project-details.png" alt="Project details" width="700">
+### Project Details
+<img src="screenshots/project-details.png" alt="Project View and GitHub links" width="700">
 
 ## Tech Stack
 
