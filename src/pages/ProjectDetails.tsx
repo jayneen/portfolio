@@ -1,4 +1,4 @@
-import { useParams, Link as RouterLink } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { useLocation, useNavigate } from "react-router-dom";
 
 import Box from "@mui/material/Box";
@@ -13,39 +13,41 @@ function ProjectDetails() {
     const navigate = useNavigate();
     const location = useLocation();
 
-    // return to home page
-    // restore scroll position if able
-    const handleBack = () => {
-        if (location.state?.from === "/") {
-            navigate(-1);
-        } else {
-            navigate("/");
-        }
-    };
-
     const project = projects.find((project) => project.slug === slug);
+
+    // returns to home page
+    // restore scroll position if able
+    const returnButton = () => {
+        return (
+            <Button onClick={() => {
+                if (location.state?.from === "/") {
+                    navigate(-1);
+                } else {
+                    navigate("/");
+                }
+            }}
+                sx={{ display: "flex", justifyContent: "flex-start", p: 1 }}
+            >
+                ← Back to portfolio
+            </Button>)
+    }
 
     if (!project) {
         return (
-            <Box component="section">
-                <Typography variant="h4" component="h1" gutterBottom>
-                    Project not found
-                </Typography>
-
-                <Button component={RouterLink} to="/">
-                    Back to portfolio
-                </Button>
+            <Box>
+                {returnButton()}
+                <Box component="section">
+                    <Typography variant="h4" component="h1" gutterBottom>
+                        Project not found
+                    </Typography>
+                </Box>
             </Box>
         );
     }
 
     return (
         <Box>
-            <Button onClick={handleBack}
-                sx={{ display: "flex", justifyContent: "flex-start", py: 1 }}
-            >
-                ← Back to portfolio
-            </Button>
+            {returnButton()}
 
             <Typography variant="h3" component="h1" gutterBottom>
                 {project.title}
@@ -68,7 +70,7 @@ function ProjectDetails() {
                     )
                 }
 
-                <Box sx={{ px: {xs: 2, md: 5} }}>
+                <Box sx={{ px: { xs: 2, md: 5 } }}>
                     <Box sx={{ textAlign: "left", py: 2 }}>
                         {project.details.map((paragraph, index) => (
                             <Typography
