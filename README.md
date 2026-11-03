@@ -6,7 +6,14 @@ A personal portfolio showcasing my software engineering projects, technical skil
 
 ## Screenshots
 
-*Screenshots coming soon.*
+### Homepage
+<img src="screenshots/homepage.png" alt="Portfolio homepage" width="700">
+
+### Bible Lessons
+<img src="screenshots/project-overview.png" alt="Project overview" width="700">
+
+### Church Calendar
+<img src="screenshots/project-details.png" alt="Project details" width="700">
 
 ## Tech Stack
 
