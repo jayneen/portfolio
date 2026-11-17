@@ -87,6 +87,7 @@ function Projects() {
               <Box sx={{ mb: 2 }}>
                 <ProjectMeta label="Languages" items={project.languages} />
                 <ProjectMeta label="Frameworks" items={project.frameworks} />
+                <ProjectMeta label="Tools" items={project.tools} />
               </Box>
 
               <Button

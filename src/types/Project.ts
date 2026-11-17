@@ -7,6 +7,8 @@ export interface Project {
     image?: string;
     languages?: string[];
     frameworks?: string[];
+    tools?: string[];
     link?: string[];
+    linkName?: string[];
     github?: string[];
 }

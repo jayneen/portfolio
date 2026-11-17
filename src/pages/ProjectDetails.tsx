@@ -94,6 +94,11 @@ function ProjectDetails() {
                             {project.frameworks?.join(", ") || "Not specified"}
                         </Typography>
 
+                        <Typography variant="body1" sx={{ textAlign: "left" }}>
+                            <strong>Tools:</strong>{" "}
+                            {project.tools?.join(", ") || "Not specified"}
+                        </Typography>
+
                     </Box>
 
                     <Box sx={{ display: "flex", flexWrap: "wrap", gap: 2, py: 4 }}>
@@ -105,7 +110,7 @@ function ProjectDetails() {
                                 rel="noopener noreferrer"
                                 variant="contained"
                             >
-                                View Live
+                                {project.linkName?.[0]}
                             </Button>
                         )}
 
